@@ -259,9 +259,9 @@ def train_model(model, task_type, train_generator, valid_generator, test_generat
             for x,y in generator:
                 outputs = model(x)  
                 y_pred.append(torch.argmax(outputs, dim=1).int().item())
-                loss += loss_fn(outputs, y)
+                loss += loss_fn(outputs, y).item()
                 y_true.append(y.int().item())
-            loss = loss / len(generator).item()
+            loss = loss / len(generator)
             mcc = matthews_corrcoef(y_true, y_pred)
             accuracy = accuracy_score(y_true, y_pred)
         return loss, mcc, accuracy
