@@ -20,3 +20,23 @@ We trained BPE, WordPiece and Unigram tokenizers on samples of proteins from the
 Effect of vocabulary size and number of training samples on the three tokenizers: BPE, WordPiece and Unigram. The darker the color the higher the average number of tokens per protein. Increasing the vocabulary and the training size reduces the number of tokens per protein for all of the tested tokenizers. 
 
 The "BFD_Tokenizers" contains the trained tokenizers on the BFD datasset. The path to the tokenizers is as follows: "/BFD_Tokenizers/\<NUMBER OF TRAINING SAMPLES\>/\<TOKENIZER TYPE\>/\<VOCABULARY SIZE\>"
+
+## APA
+
+```
+Dotan, E., Jaschek, G., Pupko, T., & Belinkov, Y. (2023). Effect of Tokenization on Transformers for Biological Sequences. bioRxiv. https://doi.org/10.1101/2023.08.15.553415
+```
+
+
+## BibTeX
+```
+@article{Dotan_Effect_of_Tokenization_2023,
+  author = {Dotan, Edo and Jaschek, Gal and Pupko, Tal and Belinkov, Yonatan},
+  doi = {10.1101/2023.08.15.553415},
+  journal = {bioRxiv},
+  month = aug,
+  title = {{Effect of Tokenization on Transformers for Biological Sequences}},
+  year = {2023}
+}
+
+```
