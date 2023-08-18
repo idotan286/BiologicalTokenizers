@@ -9,4 +9,12 @@ Different tokenization algorithms can be applied to biological sequences, as exe
 The "data" folder contains the train, valid and test data of seven of the eight datasets used in the paper.
 
 ## BFD Tokenizers:
+
+We trained BPE, WordPiece and Unigram tokenizers on samples of proteins from the 2.2 billion protein sequences of the BFD dataset (Steinegger and Söding 2018). We evaluate the average sequences length as a function of the vocabulary size and number of sequences in the training data.
+
+![BFD_BPE_table](https://github.com/idotan286/BiologicalTokenizers/assets/58917533/710b7aa7-0dde-46bb-9ddf-39a84b579d71)
+![BFD_WPC_table](https://github.com/idotan286/BiologicalTokenizers/assets/58917533/8adfe5a7-25f5-4723-a87a-8598c6a76ff6)
+![BFD_UNI_table](https://github.com/idotan286/BiologicalTokenizers/assets/58917533/4462e782-0b21-4377-a5fe-309685141538)
+Effect of vocabulary size and number of training samples on the three tokenizers: BPE, WordPiece and Unigram. The darker the color the higher the average number of tokens per protein. Increasing the vocabulary and the training size reduces the number of tokens per protein for all of the tested tokenizers. 
+
 The "BFD_Tokenizers" contains the trained tokenizers on the BFD datasset. The path to the tokenizers is as follows: "/BFD_Tokenizers/\<NUMBER OF TRAINING SAMPLES\>/\<TOKENIZER TYPE\>/\<VOCABULARY SIZE\>"
