@@ -175,6 +175,8 @@ def train_biological_tokenizer(data_path, task_type, tokenizer_type, vocab_size,
         result = []
         for x in X:
             ids = tokenizer.encode(x).ids
+            if len(ids) > max_length:
+                ids = ids[:max_length]
             result.append(ids)
         return result
 
